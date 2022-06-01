@@ -5,8 +5,6 @@ import dotenv = require('dotenv');
 dotenv.config({ path: '../../.env' });
 dotenv.config();
 
-console.log('targeted database: ', process.env.DATABASE_URL);
-
 let config: Knex.Config = {
   client: 'postgres',
   connection: {
